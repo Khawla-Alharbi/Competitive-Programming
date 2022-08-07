@@ -14,7 +14,9 @@ for (int i = 1; ; i++) {
   int need=0;
   for (int j = 1; j <=i; j++) {
     need+=j;
-  }if (need<=n) {
+  }
+  //instead of the above for loop : need=i*(i+1)/2;
+  if (need<=n) {
     n-=need;
     lv++;
   }else break;
