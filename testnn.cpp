@@ -2,6 +2,7 @@
 using namespace std;
 
 #pragma GCC optimize ("O3")
+#define int            long long int
 #define F              first
 #define S              second
 #define pb             push_back
@@ -97,4 +98,4 @@ int32_t main()
     return 0;
 }
 
-	 		 	 		 	 	    						 		   		
+ 		  	      					 				       		
