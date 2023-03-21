@@ -20,17 +20,14 @@ while(t--){
     zx[xx-1]=1;
     zy[yy-1]=1;
   }
-  /*if(m==1 && n>1){
-    cout<<"Yes"<<'\n';
-  }else{*/
+
   string res="No";
   for (int i = 0; i < m; i++) {
     int rx= x[i], ry= y[i];
-  //  cout<<"pos: "<<rx<<" "<<ry<<endl;
+
     if(rx != n){
-    //  cout<<"zx: "<<zx[rx]<<endl;
+    
       if(zx[rx]==0){
-  //      cout<<"here line : "<<28<<" bird no: "<<i<<endl;
         res="Yes";
         break;
       }
@@ -38,7 +35,6 @@ while(t--){
 
     if(rx != 1){
       if(zx[rx-2]==0){
-       //<<"here line : "<<34<<" bird no: "<<i<<endl;
         res="Yes";
         break;
       }
@@ -46,7 +42,6 @@ while(t--){
 
     if(ry != n){
       if(zy[ry]==0){
-    //    cout<<"here line : "<<42<<endl;
         res="Yes";
         break;
       }
@@ -54,14 +49,13 @@ while(t--){
 
     if(ry != 1){
       if(zy[ry-2]==0){
-    //    cout<<"here line : "<<50<<endl;
         res="Yes";
         break;
       }
     }
 
   }
-  cout<<res<<'\n';//}
+  cout<<res<<'\n';
 
 }
 return 0;
